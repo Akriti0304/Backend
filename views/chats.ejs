@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chats</title>
+    <link rel="stylesheet" href="/chats.css">
+</head>
+<body>
+    <div id="header">
+        <h1>Chats</h1>
+        <form action="http://localhost:8080/chats/new" method="GET">
+            <button>Send new Chat</button>
+        </form>
+        <hr id="diffHr" >
+    </div>
+    
+    <div id="main">
+        <%for(chat of chats){%>
+            <div class="card">
+                <div class="mid">
+                    <div class="from"></div>
+                    <h3>From:- <%=chat.from%></h3>
+                </div>
+                <div class="para">
+                    <p class="msg"><%=chat.msg%></p>
+                </div>
+                <div class="mid">
+                    <div class="to"></div>
+                    <h3>Recieved by <%=chat.to%></h3>
+                </div>
+                <hr>
+                <p class="date"><%=chat.created_at.toString().split(" ")[4]%>&nbsp;&nbsp;<%=chat.created_at.toString().split(" ")[2]%>.<%=chat.created_at.toString().split(" ")[1]%>.<%=chat.created_at.toString().split(" ")[3]%></p>
+                <div class="buttons">
+                    <a href="http://localhost:8080/chats/<%=chat.id%>/update">
+                        <button>Edit</button>
+                    </a>
+                    <form class="delete" method="post" action="/chats/<%=chat.id%>?_method=DELETE">
+                        <button>Delete</button>
+                    </form>
+                </div>
+            </div>
+        <%}%>
+    </div>
+
+</body>
+</html>

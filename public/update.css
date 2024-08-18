@@ -1,0 +1,70 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    margin-right: 4rem;
+    color: grey;
+    font-size: 3rem;
+}
+
+.card{
+    display: grid;
+    grid-template-rows: 4rem 4rem 1rem 2rem;
+    border: 2px solid rgba(18, 112, 219, 0.965);
+    border-radius: 0.8rem;
+    width:17rem;
+    height: 22rem;
+    padding:1rem;
+    margin-top: 5rem;
+    row-gap: 0.5rem;
+    background-color: rgb(181, 217, 240);
+} 
+textarea{
+    background-color: rgba(18, 112, 219, 0.965);
+}
+.circle{
+    background-color: black;
+    display: inline-block;
+    border-radius: 50%;
+    height:2rem;
+    width:2rem;
+    margin-right: 0.4rem;
+}
+
+h3{
+    display: inline-block;
+}
+
+hr{
+    width:90%;
+    border-color: rgba(18, 112, 219, 0.965);
+    background-color: rgba(18, 112, 219, 0.965);
+    border-radius: 0.1rem;
+}
+
+.date{
+    font-size:small;
+    border-radius: 0.5rem;
+    background-color:rgb(181, 217, 240);
+}
+
+.mid{
+    display: flex;
+    align-items: center;
+    background-color: rgb(181, 217, 240);
+}
+
+button{
+    background-color: rgba(18, 112, 219, 0.965);
+    color: white;
+    border-radius: 1rem;
+    width:6rem;
+    height:2rem;
+}
+
+.msg{
+    margin-bottom: 1.2rem;
+}

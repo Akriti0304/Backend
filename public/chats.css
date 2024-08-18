@@ -1,0 +1,122 @@
+*{
+    background-color:rgb(244, 253, 239);
+    text-align: center;
+}
+
+#main{
+    position: absolute;
+    top:10rem;
+}
+
+#header{
+    position: fixed;
+    top:0px;
+    width:100%;
+    height: 10rem;
+    z-index: 1;
+    background-color: white;
+}
+
+h1{
+    background-color: white;
+    color:black;
+    font-size: 2.5rem;
+}
+
+form{
+    background-color: white;
+}
+
+.card{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    border: 2px solid rgba(18, 112, 219, 0.965);
+    border-radius: 0.8rem;
+    width:17rem;
+    height: 22rem;
+    padding:1rem;
+    margin: 1rem;
+    row-gap: 0.5rem;
+    background-color: rgb(181, 217, 240);
+}
+
+.mid{
+    display: flex;
+    background-color: rgb(181, 217, 240);
+}
+
+.from{
+    height: 3rem;
+    width: 3rem;
+    background-color: black;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+h3{
+    display: inline-block;
+    padding-left: 0.3rem;
+    background-color: rgb(181, 217, 240);
+}
+
+.to{
+    height: 3rem;
+    width: 3rem;
+    background-color: black;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.para{
+    justify-self: center;
+    color: white;
+    background-color: rgba(18, 112, 219, 0.965);
+    border-radius: 0.5rem;
+    width: 10rem;
+    padding-left: 0.3rem;
+}
+
+.msg{
+    background-color: rgba(18, 112, 219, 0.965);
+}
+
+hr{
+    width:90%;
+    border-color: rgba(18, 112, 219, 0.965);
+    background-color: rgba(18, 112, 219, 0.965);
+    border-radius: 0.1rem;
+}
+
+.date{
+    font-size:small;
+    border-radius: 0.5rem;
+    background-color:rgb(181, 217, 240);
+}
+
+button{
+    background-color: rgba(18, 112, 219, 0.965);
+    color: white;
+    border-radius: 1rem;
+    width:8rem;
+    height:3rem ;
+}
+
+a{
+    background-color: rgba(181, 217, 240);
+    padding-right: 0.5rem;
+}
+
+.buttons{
+    display: flex;
+    background-color: rgba(181, 217, 240);
+}
+
+.delete{
+    background-color:rgba(181, 217, 240) ;
+}
+
+#diffHr{
+    width: 100%;
+    border-color: rgba(47, 98, 156, 0.965);
+    background-color: rgba(47, 98, 156, 0.965);
+}
